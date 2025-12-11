@@ -1,0 +1,26 @@
+project(RunewireInjector LANGUAGES C CXX)
+
+if(NOT WIN32)
+  message(FATAL_ERROR "Runewire.Injector currently only supports Windows builds.")
+endif()
+
+# Inherit C++ standard from parent, but enforce if someone builds standalone.
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+add_library(Runewire.Injector SHARED
+    src/runewire_injector.cpp
+)
+
+target_include_directories(Runewire.Injector
+    PUBLIC
+        ${CMAKE_CURRENT_SOURCE_DIR}/include
+)
+
+# Produce exactly Runewire.Injector.dll (no 'lib' prefix)
+set_target_properties(Runewire.Injector PROPERTIES
+    OUTPUT_NAME "Runewire.Injector"
+    PREFIX ""
+)
+

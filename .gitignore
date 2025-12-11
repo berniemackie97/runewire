@@ -1,0 +1,31 @@
+# .NET build artifacts
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+*.user
+*.suo
+*.userprefs
+
+# VS / Rider
+.vs/
+.idea/
+*.sln.DotSettings
+
+# CMake / C++ build artifacts
+CMakeFiles/
+CMakeCache.txt
+cmake-build-*/
+build/
+out/
+*.dir/
+
+# OS junk
+[Dd]esktop.ini
+[Tt]humbs.db
+.DS_Store
+
+# Tools
+.env
+.vscode/
+*.opendb

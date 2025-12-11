@@ -1,0 +1,11 @@
+﻿name: ''
+target:
+  kind: processById
+  processId: 0
+technique:
+  name: ''
+payload:
+  path: ''
+safety:
+  allowKernelDrivers: true
+  requireInteractiveConsent: false
