@@ -20,7 +20,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\src\Runewire.Orchestrator\Runewire.Orchestrator.csproj" />
+	  <ProjectReference Include="..\..\src\Runewire.Orchestrator\Runewire.Orchestrator.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
